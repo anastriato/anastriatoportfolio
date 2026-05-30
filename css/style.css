@@ -312,8 +312,8 @@ a { text-decoration: none; color: inherit; }
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 80px;
+  grid-template-columns: 320px 1fr;
+  gap: 60px;
   align-items: center;
   width: 100%;
 }
@@ -324,10 +324,10 @@ a { text-decoration: none; color: inherit; }
 
 .contact-photo {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 1/1;
   border-radius: 4px;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
   filter: grayscale(20%);
   border: 1px solid var(--border);
   transition: filter 0.4s;
@@ -337,10 +337,11 @@ a { text-decoration: none; color: inherit; }
 
 .contact-title {
   font-family: var(--font-serif);
-  font-size: clamp(3rem, 7vw, 6rem);
-  line-height: 0.95;
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  line-height: 1;
   color: var(--white);
   margin-bottom: 28px;
+  white-space: nowrap;
 }
 
 .contact-title em {
