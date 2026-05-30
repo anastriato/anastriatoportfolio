@@ -150,6 +150,29 @@ a { text-decoration: none; color: inherit; }
   color: var(--pink);
 }
 
+
+/* ── NAV IDENTITY ────────────────────────── */
+.nav-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: 16px;
+}
+
+.nav-name {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--white);
+  line-height: 1;
+}
+
+.nav-role {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pink);
+}
+
 /* ── GALLERY ─────────────────────────────── */
 .gallery {
   padding: 80px 24px 100px;
@@ -553,4 +576,15 @@ a { text-decoration: none; color: inherit; }
 .overlay-link:hover {
   color: var(--white);
   border-color: var(--white);
+}
+
+/* ── MOBILE GRID PREFERRED WIDE ─────────── */
+@media (max-width: 600px) {
+  .gallery-item.mobile-wide {
+    grid-column: span 2;
+  }
+  .gallery-item.tall {
+    grid-row: span 1;
+  }
+  .nav-identity { display: none; }
 }
