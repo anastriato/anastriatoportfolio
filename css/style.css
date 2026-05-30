@@ -599,7 +599,7 @@ a { text-decoration: none; color: inherit; }
   .gallery-item.tall {
     grid-row: span 1;
   }
-  .nav-identity { display: flex; gap: 6px; flex-direction: column; margin-left: 10px; }
+  .nav-identity { display: flex; gap: 2px; flex-direction: column; margin-left: 10px; }
   .nav-name { font-size: 1.1rem; }
-  .nav-role { display: none; }
+  .nav-role { font-size: 0.6rem; display: block; }
 }
