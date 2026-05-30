@@ -599,7 +599,9 @@ a { text-decoration: none; color: inherit; }
   .gallery-item.tall {
     grid-row: span 1;
   }
-  .nav-identity { display: flex; gap: 2px; flex-direction: column; margin-left: 10px; }
-  .nav-name { font-size: 1.1rem; }
-  .nav-role { font-size: 0.6rem; display: block; }
+  .navbar { height: auto; min-height: var(--nav-h); padding: 10px 20px; flex-wrap: wrap; align-items: center; }
+  .nav-identity { display: flex; gap: 1px; flex-direction: column; margin-left: 10px; }
+  .nav-name { font-size: 1rem; }
+  .nav-role { font-size: 0.58rem; display: block; letter-spacing: 0.1em; color: var(--pink); }
+  .nav-toggle { margin-left: auto; }
 }
